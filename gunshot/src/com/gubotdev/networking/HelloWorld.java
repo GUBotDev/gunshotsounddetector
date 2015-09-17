@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.digi.xbee.example;
+package com.gubotdev.networking;
 
 import com.digi.xbee.api.XBeeDevice;
 import com.digi.xbee.api.exceptions.XBeeException;
@@ -12,7 +12,7 @@ import com.digi.xbee.api.exceptions.XBeeException;
  *
  * @author gizmo
  */
-public class MainApp {
+public class HelloWorld {
     /* Constants */
     // TODO Replace with the port where your sender module is connected to.
     private static final String PORT = "COM1";
@@ -41,5 +41,5 @@ public class MainApp {
         } finally {
             myDevice.close();
         }
-    }
+    }  
 }

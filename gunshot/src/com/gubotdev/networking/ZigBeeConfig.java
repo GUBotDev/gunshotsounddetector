@@ -21,22 +21,19 @@ public class ZigBeeConfig {
     ZigBeeDevice localZigBee = new ZigBeeDevice("COM1", 9600); 
     RemoteXBeeDevice remoteZigBee = new RemoteXBeeDevice(localZigBee,
                                    new XBee64BitAddress("000000409D5EXXXX"));
+    
+    public ZigBeeConfig() {
+        
+    }
 
     
-    private ZigBeeDevice getZigBee() {
+    public ZigBeeDevice getLocalZigBee() {
         return localZigBee;
     }
     
-    private RemoteXBeeDevice getRemoteZigBee() {
+    public RemoteXBeeDevice getRemoteZigBee() {
         return remoteZigBee;
     }
     
-    private void readDeviceInformation() {
-        try {
-            remoteZigBee.readDeviceInfo();
-        } catch (XBeeException ex) {
-            Logger.getLogger(ZigBeeConfig.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
     
 }

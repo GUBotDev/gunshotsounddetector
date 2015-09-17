@@ -5,10 +5,24 @@
  */
 package com.gubotdev.networking;
 
+import com.digi.xbee.api.ZigBeeDevice;
+
+
 /**
  *
  * @author gizmo
  */
-public class Main {
+public class MainApp {
+    
+    ZigBeeConfig zBConfig = new ZigBeeConfig();
+    ZigBeeInfo zBInfo = new ZigBeeInfo();
+    
+    public MainApp() {
+        zBConfig.localZigBee();
+        
+        
+    }
+    
+   
     
 }
