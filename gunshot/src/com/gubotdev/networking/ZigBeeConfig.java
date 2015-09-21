@@ -7,10 +7,7 @@ package com.gubotdev.networking;
 
 import com.digi.xbee.api.RemoteXBeeDevice;
 import com.digi.xbee.api.ZigBeeDevice;
-import com.digi.xbee.api.exceptions.XBeeException;
 import com.digi.xbee.api.models.XBee64BitAddress;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
@@ -27,13 +24,14 @@ public class ZigBeeConfig {
     }
 
     
-    public ZigBeeDevice getLocalZigBee() {
+    ZigBeeDevice getLocalZigBee() {
         return localZigBee;
     }
     
     public RemoteXBeeDevice getRemoteZigBee() {
         return remoteZigBee;
     }
-    
+
+ 
     
 }

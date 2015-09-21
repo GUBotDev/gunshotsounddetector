@@ -5,6 +5,7 @@
  */
 package com.gubotdev.networking;
 
+import com.digi.xbee.api.RemoteXBeeDevice;
 import com.digi.xbee.api.ZigBeeDevice;
 
 
@@ -14,14 +15,19 @@ import com.digi.xbee.api.ZigBeeDevice;
  */
 public class MainApp {
     
-    ZigBeeConfig zBConfig = new ZigBeeConfig();
-    ZigBeeInfo zBInfo = new ZigBeeInfo();
+    public static void main(String [] args) {
+            ZigBeeConfig zBConfig = new ZigBeeConfig();
+            ZigBeeInfo zBInfo = new ZigBeeInfo();
     
-    public MainApp() {
-        zBConfig.localZigBee();
+        zBInfo.getLocalNodeInfo(zBConfig.getLocalZigBee());
+        // zBInfo.getRemoteNodeInfo(zBConfig.getRemoteZigBee());
         
         
+        
+    
     }
+    
+
     
    
     
